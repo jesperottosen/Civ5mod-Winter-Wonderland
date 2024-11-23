@@ -5,7 +5,7 @@
     <ProjectGuid>{62569a74-8cc2-4120-a981-e051c278bcd9}</ProjectGuid>
     <Name>Winter Wonderland</Name>
     <Guid>7c4c73ad-49d4-4316-95cc-ca6c0ad9ffbf</Guid>
-    <ModVersion>4</ModVersion>
+    <ModVersion>3</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>A winter wonderland of snowmen and snowy terrain</Teaser>
     <Description>A winter wonderland of snowmen and snowy terrain:
@@ -24,16 +24,20 @@
 [NEWLINE]
 [ICON_BULLET]Frosty The Snowman has the unique red ribbon tophat
 [NEWLINE]
-[ICON_BULLET]Terrain changes to Grass and Plains tiles 
+[ICON_BULLET]Terrain changes to Grass and Plains tiles (they all have snow on the ground)
 [NEWLINE]
 
 [NEWLINE]
-The North Pole Mod::
+NOTICE:
 [NEWLINE]
-[ICON_BULLET]Running this mod and the North Pole Mod will render the two snowmen improvements with the same graphics.
+[ICON_BULLET]Snow could be added to trees and jungle textures.. for some other day 
 [NEWLINE]
-[ICON_BULLET]The North Pole Santa elfes cannot build Frosty The Snowman, only his own snowmen. 
+[ICON_BULLET]Running this mod and the North Pole Mod will render the two snowmen improvements with the same graphics. It seems possible, but everytime I rename the Frosty textures the rendering fails.
 [NEWLINE]
+[ICON_BULLET]The North Pole Santa elfes cannot build Frosty The Snowman, only his own snowmen. This should even out the game. Can be enabled in UnitBuilds.xml
+[NEWLINE]
+
+
 
 [NEWLINE]
 CREDITS:
@@ -66,12 +70,12 @@ CREDITS:
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>FrostyTheSnowman/XML/FrostyTheSnowman.xml</FileName>
+        <FileName>FrostyTheSnowman/FrostyTheSnowman.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>FrostyTheSnowman/XML/UnitBuilds.xml</FileName>
+        <FileName>FrostyTheSnowman/UnitBuilds.xml</FileName>
       </Action>
     </ModActions>
     <ModDependencies>
@@ -97,62 +101,60 @@ CREDITS:
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="FrostyTheSnowman" />
-    <Folder Include="FrostyTheSnowman\Art" />
-    <Folder Include="FrostyTheSnowman\XML" />
     <Folder Include="SnowyTerrains" />
     <Folder Include="SnowyTerrains\grass" />
     <Folder Include="SnowyTerrains\plain" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FrostyTheSnowman\Art\Single Snowman HB.gr2">
+    <Content Include="FrostyTheSnowman\Single Snowman B.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="FrostyTheSnowman\Single Snowman HB.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="FrostyTheSnowman\Single Snowman HB.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="FrostyTheSnowman\Single Snowman PL.fxsxml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="FrostyTheSnowman\Single Snowman PL.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="FrostyTheSnowman\Single Snowman.gr2">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="FrostyTheSnowman\Single_snowman.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="FrostyTheSnowman\FrostyTheSnowman.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="FrostyTheSnowman\Art\Single Snowman PL.gr2">
+    <Content Include="FrostyTheSnowman\Snowman_atlas256.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="FrostyTheSnowman\Art\Single Snowman.gr2">
+    <Content Include="FrostyTheSnowman\Snowman_atlas45.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="FrostyTheSnowman\Art\Single_snowman.dds">
+    <Content Include="FrostyTheSnowman\Snowman_atlas64.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="FrostyTheSnowman\Art\Snowman_atlas256.dds">
+    <Content Include="FrostyTheSnowman\SV_snowman.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="FrostyTheSnowman\Art\Snowman_atlas45.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="FrostyTheSnowman\Art\Snowman_atlas64.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="FrostyTheSnowman\Art\SV_snowman.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="FrostyTheSnowman\XML\FrostyTheSnowman.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="FrostyTheSnowman\XML\Single Snowman B.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="FrostyTheSnowman\XML\Single Snowman HB.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="FrostyTheSnowman\XML\Single Snowman PL.fxsxml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="FrostyTheSnowman\XML\UnitBuilds.xml">
+    <Content Include="FrostyTheSnowman\UnitBuilds.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
