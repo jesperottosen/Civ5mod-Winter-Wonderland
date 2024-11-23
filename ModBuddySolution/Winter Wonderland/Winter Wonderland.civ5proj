@@ -5,7 +5,7 @@
     <ProjectGuid>{62569a74-8cc2-4120-a981-e051c278bcd9}</ProjectGuid>
     <Name>Winter Wonderland</Name>
     <Guid>7c4c73ad-49d4-4316-95cc-ca6c0ad9ffbf</Guid>
-    <ModVersion>3</ModVersion>
+    <ModVersion>4</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>A winter wonderland of snowmen and snowy terrain</Teaser>
     <Description>A winter wonderland of snowmen and snowy terrain:
@@ -29,12 +29,9 @@
 
 [NEWLINE]
 NOTICE:
-[NEWLINE]
-[ICON_BULLET]Snow could be added to trees and jungle textures.. for some other day 
-[NEWLINE]
 [ICON_BULLET]Running this mod and the North Pole Mod will render the two snowmen improvements with the same graphics. It seems possible, but everytime I rename the Frosty textures the rendering fails.
 [NEWLINE]
-[ICON_BULLET]The North Pole Santa elfes cannot build Frosty The Snowman, only his own snowmen. This should even out the game. Can be enabled in UnitBuilds.xml
+[ICON_BULLET]The North Pole Santa elfes cannot build Frosty The Snowman, only his own snowmen. This should even out the game.
 [NEWLINE]
 
 
